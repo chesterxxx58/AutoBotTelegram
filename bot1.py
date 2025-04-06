@@ -20,7 +20,7 @@ async def ask_openrouter(prompt):
     json = {
         "model": "mistralai/mistral-7b-instruct",
         "messages": [
-            {"role": "system",
+            {"role": "system", # tell the model how to behave
              "content": "Ты общаешься как обычный человек, отвечая коротко и по существу. Будь дружелюбным и не перегружай ответы. Не пиши больше 6 слов"},
             {"role": "user", "content": prompt}
         ],
